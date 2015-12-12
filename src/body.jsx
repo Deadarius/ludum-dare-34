@@ -1,14 +1,21 @@
 import React from 'react'
 import Hexagon from './hexagon.jsx'
 import Row from './row.jsx'
+import { connect } from 'react-redux'
+
+function mapStateToProps (state) {
+  return {
+    bodyData: state.body
+  }
+}
 
 class Body extends React.Component {
   render () {
-    const { body } = this.props
+    const { bodyData } = this.props
     let rows = []
 
     for (let y = 0; y < 100; y++) {
-      const rowData = body[y]
+      const rowData = bodyData[y]
       let hexagons = []
 
       for (let x = 0; x < 100; x++) {
@@ -28,4 +35,4 @@ Body.propTypes = {
   bodyData: React.PropTypes.array
 }
 
-export default Body
+export default connect(mapStateToProps)(Body)

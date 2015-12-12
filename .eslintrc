@@ -5,6 +5,7 @@ env:
 extends:
   - "eslint:recommended"
   - "standard"
+  - "standard-react"
 plugin:
   - "react"
 ecmaFeatures:
