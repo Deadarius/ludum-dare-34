@@ -19,8 +19,9 @@ class Body extends React.Component {
       let hexagons = []
 
       for (let x = 0; x < 100; x++) {
-        const cellData = rowData[x]
-        let hexagon = <Hexagon x={x} y={y} />
+        const { colour } = rowData[x]
+        let hexagon = <Hexagon x={x} y={y} colour={colour}/>
+
         hexagons.push(hexagon)
       }
 

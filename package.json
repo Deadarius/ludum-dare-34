@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/Deadarius/ludum-dare-34#readme",
   "dependencies": {
+    "noisejs": "^2.1.0",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "^4.0.0",
