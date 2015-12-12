@@ -5,7 +5,10 @@ env:
 extends:
   - "eslint:recommended"
   - "standard"
+plugin:
+  - "react"
 ecmaFeatures:
   experimentalObjectRestSpread: true
+  jsx: true
 globals: {}
 parser: "babel-eslint"

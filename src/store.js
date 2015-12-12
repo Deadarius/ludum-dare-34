@@ -12,11 +12,12 @@ function body (state = [[]], action) {
 }
 
 function generateBody () {
-  let body = [[]]
+  let body = []
 
   for (let i = 0; i < 100; i++) {
+    let row = body[i] = []
     for (let j = 0; j < 100; j++) {
-      body[i][j] = {}
+      row[j] = {}
     }
   }
 
