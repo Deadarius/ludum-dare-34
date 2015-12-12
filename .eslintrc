@@ -1,0 +1,11 @@
+env:
+  es6: true
+  browser: false
+  node: true
+extends:
+  - "eslint:recommended"
+  - "standard"
+ecmaFeatures:
+  experimentalObjectRestSpread: true
+globals: {}
+parser: "babel-eslint"
