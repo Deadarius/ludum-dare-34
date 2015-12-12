@@ -11,8 +11,20 @@ function body (state = [[]], action) {
   }
 }
 
+function generateBody () {
+  let body = [[]]
+
+  for (let i = 0; i < 100; i++) {
+    for (let j = 0; j < 100; j++) {
+      body[i][j] = {}
+    }
+  }
+
+  return body
+}
+
 let initialState = {
-  body: [[]]
+  body: generateBody()
 }
 
 let reducer = combineReducers({ body })
